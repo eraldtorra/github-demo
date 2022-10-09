@@ -1,8 +1,3 @@
-# github-demo
-A simple demo repository to show the basic Git workflow
-
-<h3> User mysql </h3>
-
 CREATE USER 'hbstudent'@'localhost' IDENTIFIED BY 'hbstudent';
 
 GRANT ALL PRIVILEGES ON * . * TO 'hbstudent'@'localhost';
