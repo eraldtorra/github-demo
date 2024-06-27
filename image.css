@@ -16,8 +16,9 @@ body, html {
     width: 740px;
     height: 1060px;
     transform: rotate(-100grad);
-    background-image:  url('image/image.jpg'); /* Your certificate image */
-    background-size: contain;
+    background-image:  url('image/image.jpg');
+    background-repeat: no-repeat;/* Your certificate image */
+    background-size: cover;
     background-position: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -29,5 +30,13 @@ body, html {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #333;
+}
+@media (max-width: 600px) {
+    .certificate {
+        transform: rotate(0grad);
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+    }
 }
 
